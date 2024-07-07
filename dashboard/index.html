@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .rtl {
+        direction: rtl;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="grid grid-cols-6 bg-black h-screen rounded-xl overflow-hidden poppins-semibold">
+      <section class="px-8 py-10">
+        <div class="text-white">
+          <div class="relative inline-flex items-center">
+            <img class="h-10 rounded-lg" src="./assets/profile.jpg" />
+            <div class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold bg-red-500 rounded-full -top-2 -end-2">4</div>
+          </div>
+
+          <h2 class="font-bold">Samantha</h2>
+          <p class="text-xs">samantha@gmail.com</p>
+        </div>
+
+        <div class="mt-20">
+          <ul class="leading-loose">
+            <li><a href="#" class="text-gray-300 hover:text-white">Dashboard</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Expenses</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Wallets</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Summary</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Accounts</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Settings</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="col-span-5 grid grid-cols-3 justify-between bg-white rounded-lg m-2 py-10">
+        <div class="col-span-2 px-10">
+          <div class="flex justify-between items-center">
+            <div>
+              <h2 class="text-3xl">Expenses</h2>
+              <p class="text-[#404852]">01-25 March, 200</p>
+            </div>
+
+            <div class="flex -space-x-2 rtl">
+              <span class="w-6 h-6 border-2 border-gray-400 text-gray-400 rounded-full flex justify-center items-center">+</span>
+              <img class="w-6 h-6 border-2 border-white rounded-full" src="./assets/profile.jpg" alt="" />
+              <img class="w-6 h-6 border-2 border-white rounded-full" src="./assets/profile.jpg" alt="" />
+              <img class="w-6 h-6 border-2 border-white rounded-full" src="./assets/profile.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div class="pt-6 px-2 pb-0">
+              <div id="bar-chart"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-10">
+              <h1 class="flex justify-between items-center"><span>Today</span> <span>&#183;&#183;&#183;</span></h1>
+              <hr />
+
+              <div class="mt-3 text-xs flex justify-between items-center">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 rounded-full p-2 text-white bg-[#36D9D8]">
+                    <path
+                      d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                  </svg>
+
+                  <p class="text-xs ms-4">
+                    <span>Grocery</span> <br />
+                    <span class="text-[#404852] poppins-regular"> 5:12 pm • Belanja di pasar </span>
+                  </p>
+                </div>
+                <div>-326.800</div>
+              </div>
+              <div class="mt-3 text-xs flex justify-between items-center">
+                <div class="flex items-center">
+                  <svg class="size-8 rounded-full p-2 text-white bg-[#B548C6]" viewBox="0 0 1024 1024" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M512 85.333333C341.333333 85.333333 170.666667 106.666667 170.666667 256v405.333333c0 82.346667 66.986667 149.333333 149.333333 149.333334l-64 64v21.333333h95.146667l85.333333-85.333333H597.333333l85.333334 85.333333h85.333333v-21.333333l-64-64c82.346667 0 149.333333-66.986667 149.333333-149.333334V256c0-149.333333-152.746667-170.666667-341.333333-170.666667z m-192 640c-35.413333 0-64-28.586667-64-64s28.586667-64 64-64 64 28.586667 64 64-28.586667 64-64 64z m149.333333-298.666666H256v-170.666667h213.333333v170.666667z m85.333334 0v-170.666667h213.333333v170.666667H554.666667z m149.333333 298.666666c-35.413333 0-64-28.586667-64-64s28.586667-64 64-64 64 28.586667 64 64-28.586667 64-64 64z" />
+                  </svg>
+
+                  <p class="text-xs ms-4">
+                    <span>Transportation</span> <br />
+                    <span class="text-[#404852] poppins-regular"> 5:12 pm • Naik bus umum </span>
+                  </p>
+                </div>
+                <div>-15.000</div>
+              </div>
+              <div class="mt-3 text-xs flex justify-between items-center">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 rounded-full p-2 text-white bg-[#FF8700]">
+                    <path
+                      d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                    <path
+                      d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                  </svg>
+
+                  <p class="text-xs ms-4">
+                    <span>Housing</span> <br />
+                    <span class="text-[#404852] poppins-regular"> 5:12 pm • Bayar Listrik</span>
+                  </p>
+                </div>
+                <div>-185.750</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-10">
+              <h1 class="flex justify-between items-center"><span>Monday, 23 March 2020</span> <span>&#183;&#183;&#183;</span></h1>
+              <hr />
+
+              <div class="mt-3 text-xs flex justify-between items-center">
+                <div class="flex items-center">
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 612 612"
+                    class="size-8 rounded-full p-2 text-white bg-[#DC3434]"
+                    fill="currentColor"
+                    xml:space="preserve">
+                    <g>
+                      <path
+                        d="M597.656,441.651H565.34v-24.129c0-7.923-6.423-14.344-14.344-14.344h-17.198
+		c-6.67-104.773-85.512-193.093-189.553-210.681l-10.259-13.882c-0.336-0.456-0.734-0.861-1.096-1.297l9.45-12.786
+		c3.219-4.358,3.709-10.15,1.271-14.986c-2.438-4.837-7.393-7.883-12.806-7.883h-49.607c-5.416,0-10.368,3.049-12.806,7.883
+		s-1.951,10.632,1.271,14.986l9.45,12.786c-0.361,0.433-0.76,0.841-1.099,1.297l-10.259,13.882
+		C163.714,210.085,84.875,298.405,78.202,403.178H61.004c-7.921,0-14.344,6.42-14.344,14.344v24.129H14.344
+		C6.423,441.651,0,448.071,0,455.994c0,7.923,6.423,14.344,14.344,14.344h46.66h489.992h46.66c7.921,0,14.344-6.42,14.344-14.344
+		C612,448.071,605.58,441.651,597.656,441.651z M240.448,255.113c-0.511,0.261-51.382,26.53-71.441,62.464
+		c-2.625,4.705-7.508,7.353-12.536,7.353c-2.367,0-4.765-0.585-6.98-1.822c-6.917-3.864-9.395-12.602-5.534-19.519
+		c24.356-43.631,81.077-72.826,83.478-74.048c7.066-3.592,15.698-0.777,19.287,6.285
+		C250.313,242.889,247.502,251.521,240.448,255.113z" />
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+
+                  <p class="text-xs ms-4">
+                    <span>Food and Drink</span> <br />
+                    <span class="text-[#404852] poppins-regular"> 5:12 pm • Makan Steak </span>
+                  </p>
+                </div>
+                <div>-156.000</div>
+              </div>
+              <div class="mt-3 text-xs flex justify-between items-center">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 rounded-full p-2 text-white bg-[#4BA83D]">
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+                      clip-rule="evenodd" />
+                  </svg>
+
+                  <p class="text-xs ms-4">
+                    <span>Entertainment</span> <br />
+                    <span class="text-[#404852] poppins-regular"> 5:12 pm • Nonton Bioskop </span>
+                  </p>
+                </div>
+                <div>-35.200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#F9FAFC] px-10">
+          <h2>Where your money go?</h2>
+
+          <div class="mt-8">
+            <p class="mb-1 text-black text-xs flex justify-between items-center mb-1"><span>Food and Drinks</span> <span>872.400</span></p>
+            <div class="w-full bg-gray-300 rounded-full h-1.5 mb-4">
+              <div class="bg-[#31BA96] h-1.5 rounded-full" style="width: 45%"></div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <p class="mb-1 text-black text-xs flex justify-between items-center mb-1"><span>Shopping</span> <span>1,378.200</span></p>
+            <div class="w-full bg-gray-300 rounded-full h-1.5 mb-4">
+              <div class="bg-[#31BA96] h-1.5 rounded-full" style="width: 45%"></div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <p class="mb-1 text-black text-xs flex justify-between items-center mb-1"><span>Housing</span> <span>928.500</span></p>
+            <div class="w-full bg-gray-300 rounded-full h-1.5 mb-4">
+              <div class="bg-[#31BA96] h-1.5 rounded-full" style="width: 45%"></div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <p class="mb-1 text-black text-xs flex justify-between items-center mb-1"><span>Transportation</span> <span>420.700</span></p>
+            <div class="w-full bg-gray-300 rounded-full h-1.5 mb-4">
+              <div class="bg-[#31BA96] h-1.5 rounded-full" style="width: 45%"></div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <p class="mb-1 text-black text-xs flex justify-between items-center mb-1"><span>Vehicle</span> <span>520.000</span></p>
+            <div class="w-full bg-gray-300 rounded-full h-1.5 mb-4">
+              <div class="bg-[#31BA96] h-1.5 rounded-full" style="width: 45%"></div>
+            </div>
+          </div>
+
+          <div class="bg-[#EDF0F6] text-sm relative mt-20 p-5 leading-loose">
+            <div class="flex justify-between items-center relative bottom-12">
+              <img src="./assets/Illustration.png" alt="" />
+              <img src="./assets/Illustration1.png" alt="" />
+            </div>
+            <h2>Save more money</h2>
+            <p class="text-[#404852] text-xs">eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            <div class="text-center"><button class="text-xs mt-3 bg-black text-white px-12 p-3 rounded">VIEW TIPS</button></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      const chartConfig = {
+        series: [
+          {
+            name: "Sales",
+            data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
+          },
+        ],
+        chart: {
+          type: "bar",
+          height: 240,
+          toolbar: {
+            show: false,
+          },
+        },
+        title: {
+          show: "",
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        colors: ["#020617"],
+        plotOptions: {
+          bar: {
+            columnWidth: "40%",
+            borderRadius: 2,
+          },
+        },
+        xaxis: {
+          axisTicks: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          labels: {
+            style: {
+              colors: "#616161",
+              fontSize: "12px",
+              fontFamily: "inherit",
+              fontWeight: 400,
+            },
+          },
+          categories: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        },
+        yaxis: {
+          labels: {
+            style: {
+              colors: "#616161",
+              fontSize: "12px",
+              fontFamily: "inherit",
+              fontWeight: 400,
+            },
+          },
+        },
+        grid: {
+          show: true,
+          borderColor: "#dddddd",
+          strokeDashArray: 5,
+          xaxis: {
+            lines: {
+              show: true,
+            },
+          },
+          padding: {
+            top: 5,
+            right: 20,
+          },
+        },
+        fill: {
+          opacity: 0.8,
+        },
+        tooltip: {
+          theme: "dark",
+        },
+      };
+
+      const chart = new ApexCharts(document.querySelector("#bar-chart"), chartConfig);
+
+      chart.render();
+    </script>
+  </body>
+</html>

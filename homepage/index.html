@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=boska@400&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+      .boska-regular {
+        font-family: "Boska", sans-serif;
+        font-weight: 400;
+      }
+      .boska-italic {
+        font-family: "Boska", sans-serif;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="h-screen p-20 bg-[#1B3936] text-white flex justify-center items-center relative">
+      <nav class="px-32 py-5 absolute top-0 left-0 w-full z-10">
+        <ul class="flex justify-between items-center text-lg">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#"> <img src="./assets/logo.png" alt="" /> </a>
+          </li>
+          <li><a href="#">Cabins</a></li>
+          <li><a href="#">Reserve</a></li>
+        </ul>
+      </nav>
+      <img src="./assets/Line.png" alt="circle image" class="absolute top-2 h-full object-cover" />
+
+      <section class="mx-auto relative">
+        <div class="flex justify-center items-center">
+          <img src="./assets/hero.png" alt="circle image" class="object-cover rounded-full" />
+          <h1 class="hero_font text-[13em] leading-[0.9] mt-[-2.5rem] absolute top-1/2 left-1/2 transform -translate-x-1/3 -translate-y-1/2 text-white">
+            <span class="ps-24">Cosy</span> <br />
+            <span class="text-[#75FF69] ps-60 relative">
+              Cabin
+              <img src="./assets/play_icon.png" class="absolute top-2/3 right-[-9.5rem] transform -translate-y-1/3 h-22" />
+            </span>
+            <br />
+            <span class="pe-80">Woods!</span>
+          </h1>
+          <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/3 translate-y-full hero_font text-3xl font-bold mt-8">In The</h2>
+        </div>
+        <p class="w-[30rem] mt-3 text-sm text-center absolute">
+          Jack built The Wilderness Retreat because he had always dreamed of having a cabin in the wilderness where he could escape the stresses of everyday life and reconnect with
+          nature.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="h-screen p-36 grid grid-cols-3 justify-between">
+        <div>
+          <img src="./assets/woods_icon.png" alt="" />
+          <p class="w-96 mt-10">
+            Welcome to our cosy cabin in the woods! Our rental home, nestled in the heart of the forest, is the ideal retreat for nature lovers and anyone looking for a peaceful
+            escape from the hustle and bustle of city life.
+          </p>
+        </div>
+        <div></div>
+        <div>
+          <ul class="font-bold text-xl">
+            <li class="mb-20 leading-3">
+              Dense forest <br />
+              <span class="hero_font text-9xl">20,291</span> m<sup>2</sup>
+            </li>
+            <li class="mb-20 leading-3">
+              Living space <br />
+              <span class="hero_font text-9xl">324</span> m<sup>2</sup>
+            </li>
+            <li class="mb-20 leading-3">
+              Proximity to nearest town <br />
+              <span class="hero_font text-9xl">30</span>minutes
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-[#1B3936]">
+        <div class="h-screen"><img src="./assets/forest.jpg" class="h-full w-full" /></div>
+        <div class="h-[100vh] relative">
+          <img src="./assets/Image4.jpg" class="absolute top-10 right-10 h-96" />
+          <img src="./assets/Image3.jpg" class="absolute top-[15%] left-10 h-80" />
+          <img src="./assets/Image1.jpg" class="absolute bottom-10 left-28 h-96" />
+          <img src="./assets/Image2.jpg" class="absolute bottom-10 right-28 h-96" />
+
+          <p class="absolute top-1/2 left-1/2 text-5xl capitalize -translate-x-1/2 -translate-y-1/2 boska-regular text-[#678784]">
+            At The <span class="text-white">Wilderness Retreat</span>, we pride ourselves on offering a <span class="text-white">peaceful, serene</span> atmosphere that allows our
+            guests to truly <span class="text-white">disconnect from the stresses</span> of everyday life. Whether you want to spend your days
+            <span class="text-white">exploring</span> the nearby trails, fishing in the nearby stream, or simply soaking in the hot tub as you take in the
+            <span class="text-white">beauty of your surroundings.</span>
+          </p>
+        </div>
+        <div><img src="./assets/Intersect.png" class="h-full w-full" /></div>
+      </section>
+
+      <section class="h-screen">
+        <h1 class="capitalize text-5xl boska-regular p-14">
+          Our unique rooms within <br />
+          the wilderness retreat
+        </h1>
+        <div class="flex justify-center items-center px-10 gap-10">
+          <div class="relative">
+            <img src="./assets/majestic.jpg" />
+            <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white boska-italic text-2xl">Majestic Mountain</p>
+          </div>
+          <div class="relative">
+            <img src="./assets/cozy_cabin.jpg" />
+            <p class="absolute bottom-10 left-10 text-white boska-italic text-2xl w-3/4">
+              <span class="text-6xl">Cosy Cabin</span> <br />
+              For the times when life is too much, quit everything and enjoy the woods
+            </p>
+          </div>
+          <div class="relative">
+            <img src="./assets/majestic2.jpg" />
+            <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white boska-italic text-2xl">Majestic Mountain</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-screen bg-[#1B3936] p-20">
+        <div class="h-full w-full text-white flex justify-center items-center text-center bg-[url('./assets/bg2.jpg')] bg-no-repeat bg-cover bg-center">
+          <div class="h-auto">
+            <h1 class="text-5xl capitalize boska-regular">
+              Sign up and <span class="text-[#75FF69]">get 10%</span> <br />
+              off your stay
+            </h1>
+            <p class="text-sm mt-3">
+              Not boring old news, just updates for our rentals. <br />
+              Take up on our offers.
+            </p>
+            <form class="max-w-md mx-auto mt-12">
+              <div class="flex">
+                <div class="relative w-full">
+                  <input type="email" class="p-2.5 w-full z-20 text-sm text-gray-900 bg-white focus:outline-none" placeholder="Email Address" required />
+                  <button type="submit" class="absolute top-0 end-0 h-full p-2.5 text-sm font-medium text-black bg-[#75FF69] focus:ring-4 focus:outline-none">Get 10% Off</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-screen grid gap-40 px-20">
+        <div class="grid grid-cols-3 justify-between items-end">
+          <h1 class="col-span-2 text-5xl capitalize boska-regular">
+            Experience the Magic of <br />
+            The Wilderness Retreat
+          </h1>
+          <p class="text-sm w-80">Welcome to our cosy cabin in the woods! Our rental home, nestled in the heart of the forest.</p>
+        </div>
+
+        <div>
+          <div class="flex justify-center items-center gap-24 h-96">
+            <div class="block h-full w-full bg-[url('./assets/testimonial1.jpg')] bg-no-repeat bg-cover bg-center relative">
+              <p class="p-1 w-80 bg-white text-sm absolute bottom-2 right-8">
+                <span>✌️</span> <br />
+                <span class="font-bold">Peaceful</span> <br />
+                <span class="text-gray-400">"We had such a wonderful time at The Wilderness Retreat. The cabin was cozy and co...</span>
+              </p>
+            </div>
+            <div class="block h-full w-full bg-[url('./assets/testimonial1.jpg')] bg-no-repeat bg-cover bg-center relative">
+              <p class="p-1 w-80 bg-white text-sm absolute bottom-2 right-8">
+                <span>✌️</span> <br />
+                <span class="font-bold">Peaceful</span> <br />
+                <span class="text-gray-400">"We had such a wonderful time at The Wilderness Retreat. The cabin was cozy and co...</span>
+              </p>
+            </div>
+            <div class="block h-full w-full bg-[url('./assets/testimonial1.jpg')] bg-no-repeat bg-cover bg-center relative">
+              <p class="p-1 w-80 bg-white text-sm absolute bottom-2 right-8">
+                <span>✌️</span> <br />
+                <span class="font-bold">Peaceful</span> <br />
+                <span class="text-gray-400">"We had such a wonderful time at The Wilderness Retreat. The cabin was cozy and co...</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="block text-center mt-5">
+            <button><img src="./assets/left_arrow.png" class="bg-[#1B3936] p-2 rounded-full h-8" /></button>
+            <button><img src="./assets/right_arrow.png" class="bg-[#75FF69] p-2 rounded-full h-8" /></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="px-20 py-14 flex justify-between">
+        <div class="leading-loose">
+          <h1 class="text-5xl capitalize boska-regular">
+            it's time to get to know <br />
+            each other!
+          </h1>
+          <p>Grab a cup of coffee and...</p>
+          <button class="border border-black rounded-[100%] w-36 py-2 mt-14">Let's talk!</button>
+        </div>
+        <div class="me-36">
+          <img src="./assets/woods_icon.png" alt="" />
+        </div>
+      </section>
+
+      <section class="grid grid-cols-3 items-center text-center text-white bg-[#1B3936]">
+        <div class="p-20 flex justify-center bg-[#75FF69] text-black">
+          <div class="w-fit relative">
+            <h1 class="text-5xl capitalize boska-regular">About</h1>
+            <p class="text-start text-xs">Us in a true way</p>
+            <img src="./assets/down_arrow2.png" class="h-10 absolute -bottom-5 -right-14" />
+          </div>
+        </div>
+        <div class="p-14 flex justify-center">
+          <div class="w-fit">
+            <p class="text-start text-xs">See our</p>
+            <h1 class="text-5xl capitalize boska-regular flex items-end gap-6">
+              Rooms
+              <img src="./assets/down_arrow2.png" class="h-10" />
+            </h1>
+          </div>
+        </div>
+        <div class="p-14 flex justify-center">
+          <div class="w-fit">
+            <p class="text-start text-xs">You can</p>
+            <h1 class="text-5xl capitalize boska-regular flex items-end gap-6">
+              Contact
+              <img src="./assets/down_arrow2.png" class="h-10" />
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="px-20 py-3">
+        <ul class="grid grid-cols-6 justify-between items-center">
+          <li><a href="#"> Made by: Azwedo </a></li>
+          <li><a href="#"> Powered by: Webflow </a></li>
+          <li><a href="#"> Change Log </a></li>
+          <li><a href="#"> Style Guide </a></li>
+          <li><a href="#"> Licensing </a></li>
+          <li><a href="#"> Instructions </a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
